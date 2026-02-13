@@ -1,0 +1,152 @@
+/* Общие стили */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f6f9;
+    color: #333;
+}
+
+/* Контейнер */
+.container {
+    width: 90%;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+/* Шапка */
+header {
+    background: #002b5c;
+    color: white;
+    padding: 30px 0;
+    text-align: center;
+}
+
+.subtitle {
+    margin-top: 5px;
+    font-size: 16px;
+    opacity: 0.8;
+}
+
+/* Навигация */
+nav {
+    background: #004080;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 10px 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav li {
+    margin: 0 15px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+/* Основной контент */
+main {
+    padding: 40px 0;
+}
+
+/* Карточки */
+.card {
+    background: white;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0 3px 8px rgba(0,0,0,0.1);
+}
+
+/* Форма */
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+input, select, textarea {
+    padding: 8px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    padding: 10px;
+    background: #002b5c;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #004080;
+}
+
+.checkbox {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+footer {
+    background: #002b5c;
+    color: white;
+    text-align: center;
+    padding: 15px 0;
+}
+
+nav a.active {
+    background-color: white;
+    color: #002b5c;
+    padding: 6px 12px;
+    border-radius: 4px;
+}
+
+.profile-photo {
+    width: 120px;
+    display: block;
+    margin: 0 auto 15px;
+}
+
+.profile-photo {
+    width: 180px;
+    height: 180px;
+    object-fit: cover; 
+    border-radius: 50%;
+    display: block;
+    margin: 0 auto 20px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: left;
+}
+
+th {
+    background-color: #002b5c;
+    color: white;
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
