@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Обратная связь</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+    <div class="container">
+        <h1>Обратная связь</h1>
+        <p class="subtitle">Буду рад вашим сообщениям</p>
+    </div>
+</header>
+
+<nav>
+    <div class="container">
+        <ul>
+            <li><a href="index.html">Главная</a></li>
+            <li><a href="feedback.html" class="active">Обратная связь</a></li>
+        </ul>
+    </div>
+</nav>
+
+<main>
+    <div class="container">
+        <section class="card">
+            <h2>Форма обратной связи</h2>
+
+            <form action="#" method="post">
+
+                <label>Имя</label>
+                <input type="text" name="name" required>
+
+                <label>Email</label>
+                <input type="email" name="email" required>
+
+                <label>Курс обучения</label>
+                <select name="course">
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                </select>
+
+                <label>Ваше сообщение</label>
+                <textarea name="message" rows="5"></textarea>
+
+                <div class="checkbox">
+                    <input type="checkbox" required>
+                    <span>Согласен на обработку данных</span>
+                </div>
+
+                <button type="submit">Отправить</button>
+
+            </form>
+        </section>
+    </div>
+</main>
+
+<footer>
+    <div class="container">
+        <p>&copy; 2026 | Студент ВШЭ</p>
+    </div>
+</footer>
+
+</body>
+</html>

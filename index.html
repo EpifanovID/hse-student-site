@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Я — студент ВШЭ</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Leaflet CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"/>
+</head>
+
+<body>
+
+<header>
+    <div class="container">
+        <h1>Я — студент ВШЭ</h1>
+        <p class="subtitle">Путь в мире прикладной математики</p>
+    </div>
+</header>
+
+<nav>
+    <div class="container">
+        <ul>
+            <li><a href="index.html" class="active">Главная</a></li>
+            <li><a href="feedback.html">Обратная связь</a></li>
+        </ul>
+    </div>
+</nav>
+
+<main>
+    <div class="container">
+
+        <section class="card">
+            <h2>Обо мне</h2>
+            <p>
+                Меня зовут <strong>Илья</strong>, я студент
+                <em>Высшей школы экономики</em>.
+                Я обучаюсь по направлению
+                <abbr title="Прикладная математика">ПМ</abbr>.
+            </p>
+        </section>
+
+        <section class="card">
+            <h2>Моя фотография</h2>
+
+            <img class="profile-photo"
+                 src="images/photo.jpeg"
+                 alt="Моё фото">
+
+            <p>
+                Меня зовут Илья, я студент ВШЭ и изучаю прикладную математику.
+                Мне интересны алгоритмы, программирование и веб-разработка.
+            </p>
+        </section>
+
+        <section class="card">
+            <h2>Мои интересы</h2>
+            <ul>
+                <li>Математический анализ</li>
+                <li>Стохастические процессы</li>
+                <li>Веб-разработка</li>
+                <li>Разработка программных продуктов</li>
+            </ul>
+        </section>
+
+        <section class="card">
+            <h2>Навыки</h2>
+            <article>
+                <h3>Технические навыки</h3>
+                <p>HTML, CSS, JavaScript</p>
+            </article>
+
+            <article>
+                <h3>Soft Skills</h3>
+                <p>Аналитическое мышление, системность, самообучаемость</p>
+            </article>
+        </section>
+
+        <section class="card">
+            <h2>Мой план развития</h2>
+            <ol>
+                <li>Углубить знания в алгоритмах</li>
+                <li>Разработать собственный веб-проект</li>
+                <li>Изучить современные фреймворки</li>
+                <li>Пройти стажировку в IT-компании</li>
+            </ol>
+        </section>
+
+        <section class="card">
+            <h2>Пример учебного расписания</h2>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>День</th>
+                        <th>Предмет</th>
+                        <th>Время</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td>Понедельник</td>
+                        <td>Математический анализ</td>
+                        <td>10:00–11:30</td>
+                    </tr>
+
+                    <tr>
+                        <td>Среда</td>
+                        <td>Теория вероятностей</td>
+                        <td>12:00–13:30</td>
+                    </tr>
+
+                    <tr>
+                        <td>Пятница</td>
+                        <td>Веб-программирование</td>
+                        <td>14:00–15:30</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <!-- КАРТА -->
+        <section class="card">
+            <h2>Где я учусь</h2>
+            <p>На карте показано расположение Высшей школы экономики.</p>
+
+            <div id="map"></div>
+        </section>
+
+        <!-- ЧАТ -->
+        <section class="card">
+            <h2>Чат с автором страницы</h2>
+
+            <div id="chat">
+
+                <div id="chat-messages"></div>
+
+                <input
+                    type="text"
+                    id="chat-input"
+                    placeholder="Напишите сообщение..."
+                >
+
+                <button id="send-btn">Отправить</button>
+
+                <button id="voice-btn">🎤 Голосовое сообщение</button>
+
+            </div>
+        </section>
+
+    </div>
+</main>
+
+<footer>
+    <div class="container">
+        <p>&copy; 2026 | Студент ВШЭ</p>
+    </div>
+</footer>
+
+<!-- Leaflet JS -->
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+
+<!-- Основной JS файл -->
+<script src="script.js"></script>
+
+</body>
+</html>
